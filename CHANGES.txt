@@ -1,0 +1,118 @@
+releases:
+
+    - release: 1.0 (beta)
+        date:  2013-03-29
+        changes:
+
+            - Split from utils.py JS, CSS into nanolp-extra/
+            - Added Uri.islocal(), swithed to it instead of 'if uri.fspath'
+            - Added fetchers mechanism and Vfile's (different protocols openers)
+            - Added 'file:///' scheme
+            - Added 'zip://' scheme
+            - Added 'shell://' scheme
+            - Added 'ftp://' scheme
+            - Fixed variable text in .master-files with .in-files
+            - Added doctest of Vfile, ZIPfile
+            - Added 'lpurlrc' URL config. file and it's support
+            - Added password support to zip:// fetcher
+            - Added test17/ for different fetching
+            - Fixed Parser.ensureinput()
+            - Added possibility 'python -m nanolp.test.{ftpserver|httpserver} -h'
+            - Refactored tests.py: now it's package
+            - Added nanolp.test.ftpserver for FTP fetching tests
+            - Added nanolp.test.httpserver for HTTP fetching tests
+            - Added nanolp.test.cat (Unix 'cat') for shell:// tests
+            - Added test18/ - FTP fetching with login and password
+            - Added more substituted (with placeholders) *.in files in tests
+            - Added 'auth' arg to TestExamplesDirVia{HTTP|FTP} classes
+            - Added HTTP authorization support (see 'lpurlcfg')
+            - Added test19/, test20/
+            - Added negative index in commands ('xx.-1' last, 'xx.-2' 2nd from end)
+            - Added test21/ on negative indexes on pasted commands
+            - Fixed file tests for Linux (Ubuntu)
+            - Added TCP_PORT() and random port usage in tests
+            - Added nanolp._instlog module
+            - Added nanolp.test.config module for tests config. params
+            - Changed HTML parse engine (for publish) from minidom to HTMLParser
+            - Added README.txt to each test
+            - Removed FSURLRE, URLRE
+            - Renamed LP HTMLParser to XHTMLParser
+            - Added CmdSyntax class, switched to new syntax (cmd. definition with empty body is denied)
+            - Added support of 2 different surround symbols pairs: for code and doc
+            - Removed CmdRe class
+            - Added test22/ for different surround symbols
+            - Added support of vars $0, $1, $-1, $*
+            - Changed implementation of 'on' cmd. expression parser
+            - Added event trapping
+            - Added new event 'subargs' (handling substotution of arguments - see test14/)
+            - Added new logos
+            - Added PDF, ODT presentation
+
+    - release: 1.0i
+        date:  2013-02-14
+        changes:
+
+            - Added -q option (quiet)
+            - Added unittest support (and 'nanolp.tests' module)
+            - Refactored: split lp.py into several modules
+            - Fixed setup.py to install modules depends on Python ver.
+            - Fixed doctests suite for Python 3
+            - Added -c option (cfg. file path)
+            - Added -f option (force format detection)
+            - Added -o option (output directory)
+            - Fixed cfg file path in Lp to be abspath
+            - Fixed cross-refs file path
+            - Fixed cross-refs chunks text
+            - Removed chdir() to test dir. (in tests.py)
+            - Added Uri class to wrap filename/file-obj/url-obj
+            - Added URL support to parsefile(), so now it works in CLI
+            - Added URL support to UseCmd (<<use>>) with relative paths too
+            - Added URL support to cross-freferences file
+            - Now in command can be escaped with \ all string.punctuation's
+            - If dir. of output file (in <<file>>) does not exist, it'll be created
+            - Added support of inner output dirs in tests ('__' -> '/' in *.master)
+            - Added test13/ and URL fetching test support
+            - Added event handlers with chaining support
+            - Added <<on.*>> command for class-based handlers installing
+            - Added test14/ for handlers
+            - Done import of handlers (after <<use>> command)
+            - Added HTML parser (and ignore cfg. file option: error, fatal, warning)
+            - Added test15/ for HTML parser
+            - Added -p option (publish of HTML file)
+            - Added test16/ for publishing
+            - Added JS, CSS for publishing HTML files
+            - Added to test *.in files support
+
+    - release: 1.0h
+        date:  2013-01-23
+        changes:
+
+            - Added icon for view/download input LP file in refs file
+            - Improved styles of refs file
+            - Added config. file link in refs file
+            - Added txt2tags parser
+            - Added Asciidoc parser
+
+    - release: 1.0g
+        date:  2013-01-22
+        changes:
+
+            - Fixed test dir detecting in test.py
+            - Added 'References' generation with option -r
+            - Some little bugs fixed
+
+    - release: 1.0f
+        date:  2013-01-20
+        changes:
+
+            - Fixed bug with 'lprc' lookup
+            - Improved 'usage' screen
+            - Fixed bug with '-x' (not worked)
+            - Changed README
+            - Error msg. with line numbers now is 1-based
+
+    - release: 1.0e
+        date:  2013-01-19
+        changes:
+
+            - Initial release on PyPI

@@ -1,0 +1,3 @@
+[ftp://.*]
+login = $FTP_LOGIN
+password = $FTP_PASSWORD

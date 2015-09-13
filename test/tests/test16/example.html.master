@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Example code</title>
+<link href="nanolp-pub.css" rel="stylesheet" type="text/css"/><script type="text/javascript">var LP_CFG = {'SURR':['[[', ']]'], 'CMDS':{'use': '', 'file.x': '', 'myv.0': '', 'myv.1': '', 'c.isneg': '', 'c.fun1': '', 'min': 'math.md', 'max': 'math.md', 'c.hh.0': 'cstd.md', 'c.hh.1': 'cstd.md'}};</script><script src="nanolp-pub.js" type="text/javascript"></script></head>
+<body>
+
+<p>This file uses 2 files: [[use, math.md]] and [[use, mnt:c, cstd.md]],
+write [[file.x, out.out]] as <code>[[=c.fun1]]</code></p>
+
+<h1 id="exampleofliterateprogramminginmarkdown">Example of Literate Programming in Markdown</h1>
+
+<h2 id="code1">Code 1</h2>
+
+<p>Two variables, [[myv]]: <code>int v1</code> and <code>int v2</code>.
+This example shows using of external file also.
+Test if variable is negative looks like [[c.isneg]]: <code>if ($x &lt;
+0)</code>.
+So, we can write absolute function [[c.fun1]]:</p>
+
+<pre><code>[[=c.hh.0, file:GUI]]
+[[=myv.*, join:;\n]];
+int fun1(int a) {
+    [[=c.isneg, x:a]] {
+        a += 100;
+        return -a;
+    }
+    else
+        return a;
+}
+[[=min]]
+[[=max]]
+[[=c.hh.1]]
+</code></pre>
+
+<p>last line</p>
+
+</body>
+</html>

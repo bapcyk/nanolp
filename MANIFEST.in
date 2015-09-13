@@ -1,0 +1,8 @@
+include bin *
+include *.txt
+exclude _FOSSIL_
+exclude nanolp.fossil
+include MANIFEST.in
+recursive-include test *
+recursive-include nanolp-extra *
+recursive-include doc *

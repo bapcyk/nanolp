@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <style>
+        .lpcode {
+            font-family: monospace;
+            display: inline;
+        }
+        code.lpcode {
+            display: block;
+            padding: 20px;
+            white-space: pre;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>Example of simple math library</h1>
+
+        <h2>Files</h2>
+
+This is the dummy math. library in C. Header file is [[file.h, m.h.out]]:
+<code class="lpcode">
+    [[=incl.*]]
+    [[=decl.*, join:;\n]];
+</code>
+
+Source file is [[file.c, m.c.out]]:
+<code class="lpcode">
+    #include "m.h"
+    [[=<a href="#decl.abs">decl.abs</a>]]
+    {
+        [[=c.abs]]
+    }
+    [[=decl.max]]
+    {
+        [[=c.max]]
+    }
+</code>
+
+    <h2>Source</h2>
+
+Negative testing [[c.isneg]] of some variable is very simple: <pre class="lpcode">$v &lt; 0</pre>.
+So, owr function will have signature <a name="decl.abs">[[decl.abs]]: <pre class="lpcode">int abs(int x)</pre>.
+Its body [[c.abs]] is simple:
+<code class="lpcode">
+    <b>if</b> ([[=c.isneg, v:x]]) <b>return</b> -x;
+    <b>else</b> <b>return</b> x;
+</code>
+We need to include files [[incl.stdio]]:
+<code class="lpcode">
+    #include &lt;stdio.h&gt;
+    #include &lt;math.h&gt;
+</code>
+Also we can declare very simple function: [[decl.max]]: <pre class="lpcode">int max(int x, int y)</pre>,
+which can be defined easy [[c.max]]:
+<code class="lpcode">
+    if (x&gt;y) return x;
+    else return y;
+</code>
+</body>
+</html>

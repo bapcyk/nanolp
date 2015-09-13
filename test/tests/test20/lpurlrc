@@ -1,0 +1,3 @@
+[http://.*]
+login = tester
+password = 123

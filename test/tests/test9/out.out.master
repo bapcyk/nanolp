@@ -1,0 +1,9 @@
+#ifndef _GUI_H_
+# define _GUI_H_
+def fun1(x):
+    if a < 0:
+        a += 100
+        return -a
+    else:
+        return a
+#endif

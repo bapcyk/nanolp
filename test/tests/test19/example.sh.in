@@ -1,0 +1,1 @@
+-i ftp://$FTP_HOST:$FTP_PORT/example.md -r

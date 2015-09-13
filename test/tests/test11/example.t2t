@@ -1,0 +1,27 @@
+title:      Example code
+prev_title: Extensions
+prev_url:   index.html
+next_title: Abreviation Extension
+next_url:   abbreviations.html
+[[file.x, t2t.out]] ``[[=c.fun1]]``
+
+Example of Literate Programming in Markdown
+===========================================
+
+Code 1
+------
+
+Test if variable is negative looks like [[c.isneg]]: ``if $x < 0``.
+Increment of variable in-place [[c.incr]]:
+``` $v += $on
+
+So, we can write absolute function [[c.fun1]]:
+```
+def fun1(x):
+    [[=c.isneg, x:a]]:
+        [[=c.incr, v:a, on:100]]
+        return -a
+    else:
+        return a
+x = 1
+```

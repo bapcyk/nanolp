@@ -1,0 +1,1 @@
+-i ftp://localhost:52160/example.md -r

@@ -1,0 +1,7 @@
+def fun1(x):
+    if a < 0:
+        a += 100
+        return -a
+    else:
+        return a
+x = 1

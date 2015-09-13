@@ -1,0 +1,11 @@
+#include "m.h"
+int abs(int x)
+{
+    if (x < 0) return -x;
+    else return x;
+}
+int max(int x, int y)
+{
+    if (x>y) return x;
+    else return y;
+}

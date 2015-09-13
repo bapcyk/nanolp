@@ -1,0 +1,129 @@
+body {
+    background-color: white;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.outputinfo {
+    width: 100%;
+    border-style: none;
+}
+
+.outputinfo td {
+    vertical-align: middle;
+}
+
+.outputinfo .code {
+    background-color: white;
+}
+
+.outputinfo .param {
+    color: #111166;
+}
+
+.chunkinfo {
+    width: 100%;
+    border-style: none;
+}
+
+.param {
+    width: 13ex;
+    font-weight: bold;
+    padding: 2px 10px 2px 0px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.code {
+    background-color: #F0EBFE;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    border: thin solid #AAF;
+    border-radius: .5em;
+}
+
+h1 {
+    color: #111166;
+    margin: 0;
+    padding: 10px 0 20px 5px;
+    font-size: 24px;
+}
+
+#about {
+    text-align: center;
+    font-size: 8pt;
+    font-family: Verdana;
+    margin: 5px 0 10px 0;
+}
+
+h2 {
+    color: #111166;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+#ctrlbar {
+    background-color: #F0EBFE;
+    border-color: #707070;
+    border-style: none none solid none;
+    border-width: 1px;
+    margin: 0;
+    padding: 10px 0 5px 10px;
+}
+
+.popup {
+}
+
+/*.popup * {
+    position: relative;
+}*/
+
+.popup div {
+    display: none;
+}
+
+.popup div #caption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 2px 2px 5px 2px;
+}
+
+.popup div a {
+    line-height: 2;
+    display: block;
+}
+
+.popup:hover div {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    background-color: #E6E6FF;
+    color: black;
+    /*max-width: 200px;*/
+    border: 1px solid #C0C0C0;
+    font: normal 10px/12px verdana;
+    text-align:left;
+    border-radius: .5em;
+}
+
+.dlarrow {
+    margin: 7px;
+    padding: 0;
+    display: inline;
+    font-size: 17pt;
+    font-weight: bold;
+    background-color: #77AA11;
+    border: 1px solid #777700;
+    text-color: white;
+    border-radius: .4em;
+}
+
+.dlarrow a {
+    text-decoration: none;
+    color: white;
+}

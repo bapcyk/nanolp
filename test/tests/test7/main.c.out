@@ -1,0 +1,4 @@
+#include "mymath.h"
+void main() {
+	int m = max(5, 10);
+}

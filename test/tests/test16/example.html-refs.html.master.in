@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="nanolp.css" type="text/css"/>
+<title>example.html: references</title>
+</head>
+<body>
+<div id="ctrlbar">
+<h1><span class="dlarrow"><a href="example.html" title="${ABSPATH example.html}">&dArr;</a></span>${ABSPATH example.html}: references</h1>
+<table class="outputinfo">
+<tr>
+<td class="param">Outputs:</td>
+<td>
+<i title="Flush of files is disabled">out.out</i>
+</td>
+</tr>
+<tr>
+<td class="param">Includes:</td>
+<td>
+<a title="${ABSPATH math.md}" href="math.md">math.md</a>&nbsp;&nbsp;
+<a title="${ABSPATH cstd.md}" href="cstd.md">cstd.md</a>&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td class="param">Cfg. file:</td>
+<td>
+<a href="lprc" title="${ABSPATH lprc}">lprc</a>
+</td>
+</tr>
+<tr>
+<td class="param">Index:</td>
+<td>
+<a href="#c.fun1">c.fun1</a>&nbsp;&nbsp;
+<a href="#c.hh.0">c.hh.0</a>&nbsp;&nbsp;
+<a href="#c.hh.1">c.hh.1</a>&nbsp;&nbsp;
+<a href="#c.isneg">c.isneg</a>&nbsp;&nbsp;
+<a href="#file.x">file.x</a>&nbsp;&nbsp;
+<a href="#max">max</a>&nbsp;&nbsp;
+<a href="#min">min</a>&nbsp;&nbsp;
+<a href="#myv.0">myv.0</a>&nbsp;&nbsp;
+<a href="#myv.1">myv.1</a>&nbsp;&nbsp;
+<a href="#use">use</a>&nbsp;&nbsp;
+<a href="#use(2)">use(2)</a>&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td class="param">Variables:</td>
+<td>
+<pre class="code">
+{"_anon": {}, "c": {}}
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<h2><a name="use">use</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+math.md
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="use(2)">use(2)</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+cstd.md
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+mnt : c
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="file.x">file.x</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+out.out
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code"><a href="#c.fun1">[[=c.fun1]]</a></pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="myv.0">myv.0</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">int v1</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="myv.1">myv.1</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">int v2</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="c.isneg">c.isneg</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">if ($x &lt;
+0)</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="c.fun1">c.fun1</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code"><a href="#c.hh.0">[[=c.hh.0, file:GUI]]</a>
+<span class="popup">[[=myv.*, join:;\n]]<div><span id="caption">Matched:</span><a href="#myv.0">[[myv.0]]</a><a href="#myv.1">[[myv.1]]</a></div></span>;
+int fun1(int a) {
+    <a href="#c.isneg">[[=c.isneg, x:a]]</a> {
+        a += 100;
+        return -a;
+    }
+    else
+        return a;
+}
+<a href="#min">[[=min]]</a>
+<a href="#max">[[=max]]</a>
+<a href="#c.hh.1">[[=c.hh.1]]</a></pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="min">min</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">int min(int a, int b) {
+    if (a &gt; b) return b;
+    else return a;
+}</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="max">max</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">int max(int a, int b) {
+    if (a &gt; b) return a;
+    else return b;
+}</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="c.hh.0">c.hh.0</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">#ifndef _${file}_H_
+# define _${file}_H_</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<h2><a name="c.hh.1">c.hh.1</a></h2>
+<table class="chunkinfo">
+<tr>
+<td class="param">pos-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">kw-args:</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="param">chunk:</td>
+<td><pre class="code">#endif</pre></td>
+</tr>
+</table>
+<hr width="100%" />
+<div id="about">
+<a href="http://code.google.com/p/nano-lp">$__ABOUT__</a> - 
+<a href="http://balkansoft.blogspot.com">BalkanSoft.BlogSpot.Com</a>
+</div></body></html>

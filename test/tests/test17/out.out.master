@@ -1,0 +1,15 @@
+#ifndef _GUI_H_
+# define _GUI_H_
+def fun1(x):
+    if a < 0:
+        a += 100
+        return -a
+    else:
+        return a
+#endif
+def min(x,y): return x if x<y else y
+
+int abs(int x) {
+    if (x<0) return -x;
+    else return x;
+}

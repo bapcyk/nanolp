@@ -1,0 +1,50 @@
+# Markdown file extensions
+MDPARSER_EXT = .md, .mmd, .txt
+# Markdown surround symbols
+MDPARSER_SURR = <<, >>
+
+# OpenOffice file extensions
+OOPARSER_EXT = .odt
+# OpenOffice surround symbols
+OOPARSER_SURR = <<, >>
+# OpenOffice code elements style name
+OOPARSER_STYLE = lpcode
+
+# Creole file extensions
+CREOLEPARSER_EXT = .creole, .cre, .crl
+# Creole surround symbols
+CREOLEPARSER_SURR = <<, >>
+
+# ReStructuredText file extensions
+RSTPARSER_EXT = .rst, .rest, .restr
+# ReStructuredText surround symbols
+RSTPARSER_SURR = <<, >>
+
+# TeX file extensions
+TEXPARSER_EXT = .tex, .latex
+# TeX surround symbols
+TEXPARSER_SURR = <<, >>
+# TeX inline commands
+TEXPARSER_INLCMDS = verb, verb*
+# TeX block commands
+TEXPARSER_BLKCMDS = verbatim, verbatim*
+
+# Txt2Tags file extensions
+TXT2TAGSPARSER_EXT = .t2t
+# Txt2Tags surround symbols
+TXT2TAGSPARSER_SURR = <<, >>
+
+# Asciidoc file extensions
+ASCIIDOCPARSER_EXT = .asc, .ascii, .a2d
+# Asciidoc surround symbols
+ASCIIDOCPARSER_SURR = <<, >>
+
+# HTML file extensions
+HTMLPARSER_EXT = .html, .shtml, .htm, .xml
+# HTML surround symbols
+HTMLPARSER_SURR = [[, ]]
+# HTML code elements style name
+HTMLPARSER_STYLES = lpcode
+# HTML code elements tags
+HTMLPARSER_TAGS = pre, code
+

@@ -1,0 +1,41 @@
+.lpdefine {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.popup {
+}
+
+/*.popup * {
+    position: relative;
+}*/
+
+.popup div {
+    display: none;
+}
+
+.popup div #caption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 2px 2px 5px 2px;
+}
+
+.popup div a {
+    line-height: 2;
+    display: block;
+}
+
+.popup:hover div {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    background-color: #E6E6FF;
+    color: black;
+    /*max-width: 200px;*/
+    border: 1px solid #C0C0C0;
+    font: normal 10px/12px verdana;
+    text-align:left;
+    border-radius: .5em;
+}

@@ -1,0 +1,11 @@
+Markdown test of variables substitution ('vars' command) with:
+    - creation of vars. dictionaries
+    - creation of vars.
+    - substitution:
+        - simple
+        - with global vars.
+        - with redefinition of var
+        - to itself (see '*:*')
+        - with usage of dictionary (see '*:$d1')
+        - with value from dictionary (see '${d1.v1}'
+        - overrding of global var. value

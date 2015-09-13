@@ -1,0 +1,54 @@
+# Markdown file extensions
+MDPARSER_EXT = .md, .mmd, .txt
+# Markdown surrounder symbol
+MDPARSER_SURR = [[, ]]
+
+# OpenOffice file extensions
+OOPARSER_EXT = .odt
+# OpenOffice surrounder symbol
+OOPARSER_SURR = [[, ]]
+# OpenOffice code elements style name
+OOPARSER_STYLE = lpcode
+
+# Creole file extensions
+CREOLEPARSER_EXT = .creole, .cre, .crl
+# Creole surround symbols
+CREOLEPARSER_SURR = @@, @@
+
+# ReStructuredText file extensions
+RSTPARSER_EXT = .rst, .rest, .restr
+# ReStructuredText surround symbols
+RSTPARSER_SURR = @@, @@
+
+# TeX file extensions
+TEXPARSER_EXT = .tex, .latex
+# TeX surround symbols
+TEXPARSER_SURR = @@, @@
+# TeX inline commands
+TEXPARSER_INLCMDS = verb, verb*
+# TeX block commands
+TEXPARSER_BLKCMDS = verbatim, verbatim*
+
+# Txt2Tags file extensions
+TXT2TAGSPARSER_EXT = .t2t
+# Txt2Tags surround symbols
+TXT2TAGSPARSER_SURR = [[, ]]
+
+# Asciidoc file extensions
+ASCIIDOCPARSER_EXT = .asc, .ascii, .a2d
+# Asciidoc surround symbols
+ASCIIDOCPARSER_SURR = @@, @@
+
+# XHTML file extensions
+XHTMLPARSER_EXT = .html, .shtml, .htm, .xml
+# XHTML surround symbols
+XHTMLPARSER_SURR = [[, ]]
+# XHTML code elements style name
+XHTMLPARSER_STYLES = lpcode
+# XHTML code elements tags
+XHTMLPARSER_TAGS = pre, code
+# ignore errors types
+XHTMLPARSER_IGNORE = fatal, error, warning
+# ignore errors types
+XHTMLPARSER_IGNORE = error, fatal
+

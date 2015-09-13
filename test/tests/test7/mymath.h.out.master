@@ -1,0 +1,5 @@
+#ifndef _MYMATH_H_
+#define _MYMATH_H_
+int abs(int x);
+int max(int a, int b);
+#endif
